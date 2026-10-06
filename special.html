@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>기획전 | DASHIGI MUGUNJI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
+</head>
+<body >
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">DASHIGI MUGUNJI
+        <small>EVERYDAY KIMCHI</small>
+      </a>
+      <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="메뉴 열기">☰ MENU</button>
+      <nav class="nav">
+        <a href="index.html#products">전체상품</a>
+        <a href="index.html#popular">주간 인기상품</a>
+        <a href="special.html">시즌 기획전</a>
+        <a href="special.html#recommend">추천상품</a>
+        <a href="index.html#reviews">리뷰</a>
+      </nav>
+      <div class="header-actions">
+        <a href="cart.html">장바구니 (<span data-cart-count>0</span>)</a>
+      </div>
+    </div>
+  </header>
+  <main class="page-shell">
+    <div class="breadcrumb">
+      <a href="index.html">홈</a>　/　기획전
+    </div>
+    <section class="special-hero">
+      <div class="special-hero-image" role="img" aria-label="다시기 묵은지 기획전 이미지">
+      </div>
+      <div class="special-hero-copy">
+        <div class="eyebrow">SPECIAL COLLECTION</div>
+        <h1>계절과 식탁을 잇는 기획전</h1>
+        <p>계절에 어울리는 김치와 특별한 구성을 만나보세요.</p>
+      </div>
+    </section>
+    <section class="special-section" id="season">
+      <div class="eyebrow">01 · SEASONAL PICK</div>
+      <h2>계절을 담은 김치</h2>
+      <p>계절에 어울리는 산뜻한 김치를 만나보세요.</p>
+      <div class="special-products" id="seasonProducts"></div>
+    </section>
+    <section class="special-section" id="family">
+      <div class="eyebrow">02 · FAMILY TABLE</div>
+      <h2>우리 집 식탁 세트</h2>
+      <p>매일의 식탁에 두고 먹기 좋은 기본 김치를 골라 담았습니다.</p>
+      <div class="special-products" id="familyProducts"></div>
+    </section>
+    <section class="special-section" id="recommend">
+      <div class="eyebrow">03 · EDITOR'S PICK</div>
+      <h2>처음 만나는 추천 김치</h2>
+      <p>무엇부터 맛볼지 고민될 때 추천하는 인기 김치입니다.</p>
+      <div class="special-products" id="recommendProducts"></div>
+    </section>
+    <a class="top-link" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑ 상단으로</a>
+  </main>
+  <!-- DESKTOP AD -->
+  <div class="ad">
+    <div class="ad-inner">
+      <a href="https://suwonkk.netlify.app" target="_blank">
+      <img src="images/ad/ad_vertical.jpg" alt="ad_Suwon_K-Kimchi_Fiesta"></a>
+    </div>
+  </div>
+  <!-- MOBILE AD -->
+  <div class="mobile-bottom">
+    <div class="ad-inner">
+      <a href="https://suwonkk.netlify.app" target="_blank">
+      <img src="images/ad/ad_horizontal.jpg" alt="ad_Suwon_K-Kimchi_Fiesta"></a>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><strong>DASHIGI MUGUNJI</strong><br>매일의 식탁에 정직한 김치</div>
+      <div>고객센터 0000-0000 · 평일 09:00–17:00<br>배송문의 · 교환/반품 · FAQ</div>
+      <div>본 사이트는 UI 프로토타입입니다.<br>실제 결제 및 주문 시스템은 연결되어 있지 않습니다.</div>
+    </div>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

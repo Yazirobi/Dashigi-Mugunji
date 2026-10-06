@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>장바구니 | DASHIGI MUGUNJI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
+</head>
+<body >
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">DASHIGI MUGUNJI
+        <small>EVERYDAY KIMCHI</small>
+      </a>
+      <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="메뉴 열기">☰ MENU</button>
+      <nav class="nav">
+        <a href="index.html#products">전체상품</a>
+        <a href="index.html#popular">주간 인기상품</a>
+        <a href="special.html#season">시즌 기획전</a>
+        <a href="special.html#recommend">추천상품</a>
+        <a href="index.html#reviews">리뷰</a>
+      </nav>
+      <div class="header-actions">
+        <a href="cart.html">장바구니 (<span data-cart-count>0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <div class="breadcrumb">
+      <a href="index.html">홈</a>　/　장바구니
+    </div>
+    <div class="section-head">
+      <div>
+        <h1 style="font-size:27px;margin:0">장바구니</h1>
+        <p>YOUR SHOPPING BAG</p>
+      </div>
+    </div>
+    <div id="cartContents"></div>
+    <section class="cart-summary" id="cartSummary" hidden>
+      <div class="summary-line">
+        <span>상품 금액</span>
+        <strong id="cartSubtotal">0원</strong>
+      </div>
+      <div class="summary-line">
+        <span>배송비</span>
+        <span>결제 단계에서 안내</span>
+      </div>
+      <div class="summary-line total">
+        <span>총 상품 금액</span>
+        <strong id="cartTotal">0원</strong>
+      </div>
+      <button class="btn" style="width:100%;margin-top:12px" type="button" onclick="checkoutDemo()">주문 / 결제하기</button>
+      <p class="notice">실제 결제 시스템은 연결되어 있지 않습니다.</p>
+    </section>
+    <a class="top-link" href="index.html">← 쇼핑 계속하기</a>
+  </main>
+  <!-- DESKTOP AD -->
+  <div class="ad">
+    <div class="ad-inner">
+      <a href="https://suwonkk.netlify.app" target="_blank">
+      <img src="images/ad/ad_vertical.jpg" alt="ad_Suwon_K-Kimchi_Fiesta"></a>
+    </div>
+  </div>
+  <!-- MOBILE AD -->
+  <div class="mobile-bottom">
+    <div class="ad-inner">
+      <a href="https://suwonkk.netlify.app" target="_blank">
+      <img src="images/ad/ad_horizontal.jpg" alt="ad_Suwon_K-Kimchi_Fiesta"></a>
+    </div>
+  </div>
+  <footer class="site-footer"><div class="footer-inner">
+    <div><strong>DASHIGI MUGUNJI</strong><br>매일의 식탁에 정직한 김치</div>
+    <div>고객센터 0000-0000 · 평일 09:00–17:00<br>배송문의 · 교환/반품 · FAQ</div>
+    <div>본 사이트는 UI 프로토타입입니다.<br>실제 결제 및 주문 시스템은 연결되어 있지 않습니다.</div>
+  </div></footer><div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

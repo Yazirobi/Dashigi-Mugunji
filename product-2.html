@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>열무김치 | DASHIGI MUGUNJI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
+</head>
+<body >
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">DASHIGI MUGUNJI
+        <small>EVERYDAY KIMCHI</small>
+      </a>
+      <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="메뉴 열기">☰ MENU</button>
+      <nav class="nav">
+        <a href="index.html#products">전체상품</a>
+        <a href="index.html#popular">주간 인기상품</a>
+        <a href="special.html#season">시즌 기획전</a>
+        <a href="special.html#recommend">추천상품</a>
+        <a href="index.html#reviews">리뷰</a>
+      </nav>
+      <div class="header-actions">
+        <a href="cart.html">장바구니 (<span data-cart-count>0</span>)</a>
+      </div>
+    </div>
+  </header>
+  <main class="page-shell">
+    <div class="breadcrumb">
+      <a href="index.html">홈</a>　/　전체상품　/　열무김치
+    </div>
+    <section class="product-detail">
+      <div class="detail-main-image">
+        <img src="images/detail/detail_main_yeolmu.jpg" alt="열무김치" onerror="this.style.display='none'; this.parentElement.insertAdjacentHTML('beforeend','<span>대표 이미지 영역</span>')">
+      </div>
+      <div class="detail-info">
+        <div class="eyebrow">DASHIGI MUGUNJI · KIMCHI</div>
+        <h1>열무김치 1kg</h1>
+        <div class="product-meta">4계절 내내 즐기는 아삭한 산뜻함</div>
+        <div class="price">13,000원</div>
+        <div class="detail-description">산뜻한 감칠맛과 아삭한 식감으로 입맛을 돋워 줍니다.<br>정확한 중량 및 원재료 정보는 판매 전 입력해 주세요.</div>
+        <div class="quantity-row">
+          <strong>수량</strong>
+          <div class="quantity-control">
+            <button type="button" onclick="changeQuantity(-1)" aria-label="수량 줄이기">−</button>
+            <input data-quantity type="number" min="1" max="99" value="1" aria-label="구매 수량">
+            <button type="button" onclick="changeQuantity(1)" aria-label="수량 늘리기">＋</button>
+          </div>
+        </div>
+        <div class="summary-line">
+          <span>상품 합계</span>
+          <strong data-subtotal>13,000원</strong>
+        </div>
+        <div class="detail-actions">
+          <button class="btn light" type="button" onclick="toggleWish(2)">♡ 찜하기</button>
+          <button class="btn light" type="button" onclick="addToCart(2, getQuantity())">장바구니 담기</button>
+          <button class="btn wide" type="button" onclick="buyNow(2)">구매하기</button>
+        </div>
+        <p class="notice">※ 현재는 화면 시연용입니다. 실제 주문·결제 기능은 연결되어 있지 않습니다.</p>
+      </div>
+    </section>
+    <section class="detail-image-long" id="detail-image">
+      <p><img src="images/detail/detail_long_yeolmu.jpg" alt="detail_yeolmu"/></p>
+    </section>
+    <a class="top-link" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">↑ 상단으로</a>
+  </main>
+  <!-- DESKTOP AD -->
+  <div class="ad">
+    <div class="ad-inner">
+      <a href="https://suwonkk.netlify.app" target="_blank">
+      <img src="images/ad/ad_vertical.jpg" alt="ad_Suwon_K-Kimchi_Fiesta"></a>
+    </div>
+  </div>
+  <!-- MOBILE AD -->
+  <div class="mobile-bottom">
+    <div class="ad-inner">
+      <a href="https://suwonkk.netlify.app" target="_blank">
+      <img src="images/ad/ad_horizontal.jpg" alt="ad_Suwon_K-Kimchi_Fiesta"></a>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><strong>DASHIGI MUGUNJI</strong><br>매일의 식탁에 정직한 김치</div>
+      <div>고객센터 0000-0000 · 평일 09:00–17:00<br>배송문의 · 교환/반품 · FAQ</div>
+      <div>본 사이트는 UI 프로토타입입니다.<br>실제 결제 및 주문 시스템은 연결되어 있지 않습니다.</div>
+    </div>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

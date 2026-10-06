@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>매일의 식탁에 정직한 김치 | DASHIGI MUGUNJI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
+</head>
+<body >
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">DASHIGI MUGUNJI
+        <small>EVERYDAY KIMCHI</small>
+      </a>
+      <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="메뉴 열기">☰ MENU</button>
+      <nav class="nav">
+        <a href="index.html#products">전체상품</a>
+        <a href="index.html#popular">주간 인기상품</a>
+        <a href="special.html#season">시즌 기획전</a>
+        <a href="special.html#recommend">추천상품</a>
+        <a href="index.html#reviews">리뷰</a>
+      </nav>
+      <div class="header-actions">
+        <a href="cart.html">장바구니 (<span data-cart-count>0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero">
+      <div class="hero-slides">
+        <div class="hero-slide active" style="background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/hero/hero-1.jpg')"></div>
+        <div class="hero-slide" style="background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url('images/hero/hero-2.jpg')"></div>
+        <div class="hero-slide" style="background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/hero/hero-3.jpg')"></div>
+        <div class="hero-slide" style="background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url('images/hero/hero-4.jpg')"></div>
+      </div>
+      <div class="hero-copy">
+        <div class="eyebrow">Fermented with care</div>
+        <h1>매일의 식탁에<br>정직한 김치</h1>
+        <p>좋은 재료와 정성으로 담근 우리 집 김치. 익숙한 맛을 가장 좋은 상태로 전합니다.</p>
+        <a class="btn" href="#products">상품 둘러보기　↗</a>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section" id="products">
+      <div class="section-head">
+        <div>
+          <h2>지금 판매 중인 김치</h2>
+          <p>OUR KIMCHI COLLECTION</p>
+        </div>
+        <a class="text-link" href="#products">전체 상품 ↗</a>
+      </div>
+      <div class="product-layout">
+        <div class="product-grid" id="productGrid"></div>      
+      </div>
+    </section>
+
+    <section class="section" id="popular">
+      <div class="section-head">
+        <div>
+          <h2>주간 인기상품</h2>
+          <p>THIS WEEK'S PICKS</p>
+        </div>
+      </div>
+      <div class="product-grid" id="popularGrid"></div>
+    </section>
+    <section class="section" id="campaigns">
+      <div class="section-head">
+        <div>
+          <h2>기획상품</h2>
+          <p>SEASONAL STORIES</p>
+        </div>
+        <a class="text-link" href="special.html">기획전 전체 보기 ↗</a>
+      </div>
+      <div class="campaign-grid">
+        <a class="campaign-card" href="special.html#family">
+          <div class="campaign-visual">
+            <img src="images/thumb/thumb_family_table.jpg" alt="FAMILY TABLE"/> 
+          </div>
+          <div class="campaign-copy">
+            <h3>우리 집 식탁 세트</h3>
+            <p>가족이 함께 즐기는 넉넉한 구성</p>
+          </div>
+        </a>
+        <a class="campaign-card" href="special.html#recommend">
+          <div class="campaign-visual">
+            <img src="images/thumb/thumb_editors_pick.jpg" alt="EDITOR'S PICK"/> 
+          </div>
+          <div class="campaign-copy">
+            <h3>처음 만나는 추천 김치</h3>
+            <p>고민될 때 시작하기 좋은 선택</p>
+          </div>
+        </a>
+        <a class="campaign-card" href="special.html#season">
+          <div class="campaign-visual">
+            <img src="images/thumb/thumb_seasonal_pick.jpg" alt="SEASONAL PICK"/>
+          </div>
+          <div class="campaign-copy">
+            <h3>계절을 담은 김치</h3>
+            <p>지금 가장 맛있는 계절의 한 입</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="section-head">
+        <div>
+          <h2>고객 리뷰</h2>
+          <p>FROM YOUR TABLE</p>
+        </div>
+        <a class="text-link" href="#reviews">리뷰 더 보기 ↗</a>
+      </div>
+      <div class="review-grid">
+        <article class="review">
+          <div class="stars">★★★★★</div>
+          <p>아삭한 식감과 깔끔한 맛이 좋아요. 밥 한 공기가 금방 없어져요.</p>
+          <small>김○○ · 배추김치</small>
+        </article>
+        <article class="review">
+          <div class="stars">★★★★★</div>
+          <p>포장도 깔끔하고 맛도 자극적이지 않아서 만족합니다.</p>
+          <small>박○○ · 열무김치</small>
+        </article>
+        <article class="review">
+          <div class="stars">★★★★★</div>
+          <p>반찬 고민할 때 꺼내 먹기 좋아요. 재주문할게요.</p>
+          <small>이○○ · 알타리김치</small>
+        </article>
+      </div>
+    </section>
+  </main>
+
+    <!-- DESKTOP AD -->
+    <div class="ad">
+      <div class="ad-inner">
+        <a href="https://suwonkk.netlify.app" target="_blank">
+        <img src="images/ad/ad_vertical.jpg" alt="ad_Suwon_K-Kimchi_Fiesta"></a>
+      </div>
+    </div>
+    <!-- MOBILE AD -->
+    <div class="mobile-bottom">
+      <div class="ad-inner">
+        <a href="https://suwonkk.netlify.app" target="_blank">
+        <img src="images/ad/ad_horizontal.jpg" alt="ad_Suwon_K-Kimchi_Fiesta"></a>
+      </div>
+    </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><strong>DASHIGI MUGUNJI</strong><br>매일의 식탁에 정직한 김치</div>
+      <div>고객센터 0000-0000 · 평일 09:00–17:00<br>배송문의 · 교환/반품 · FAQ</div>
+      <div>본 사이트는 UI 프로토타입입니다.<br>실제 결제 및 주문 시스템은 연결되어 있지 않습니다.</div>
+    </div>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
