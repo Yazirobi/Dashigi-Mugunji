@@ -1,0 +1,14 @@
+# 의존성 패키지 (Node.js/npm 사용 시 필수)
+node_modules/
+dist/
+build/
+
+# 개발 툴 설정 및 캐시 파일
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 비밀번호, API 키 등 보안이 필요한 환경변수 파일
+.env
+.env.local
