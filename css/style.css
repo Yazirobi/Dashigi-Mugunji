@@ -653,7 +653,7 @@ img {
 .special-hero-image {
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../images/hero/special-hero.jpg'); 
+  background-image: linear-gradient(90deg, rgba(245, 245, 243, 1), rgba(245, 245, 243, 0.8), rgba(245, 245, 243, 0.3)), url('../images/hero/special-hero.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
