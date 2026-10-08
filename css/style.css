@@ -124,7 +124,9 @@ img {
 
 /* 각각의 배경 이미지 */
 .hero-slide {
+  /*
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  */
   position: absolute;
   inset: 0;
   background-size: cover;
